@@ -19,6 +19,8 @@ public:
     void restart();
     void start();
     void answer();
+    void undo();
+    void redo();
 private:
     int cur_x;
     int cur_y;
