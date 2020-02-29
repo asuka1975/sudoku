@@ -8,6 +8,7 @@
 #include <array>
 #include <set>
 #include "history.h"
+#include "puzzle.h"
 
 class puzzle_model {
 public:
@@ -21,11 +22,12 @@ public:
     void clear(int x, int y);
     void restart();
     void set_answer();
+    void undo();
+    void redo();
     bool is_question(int x, int y) const;
     bool is_valid(int x, int y) const;
 private:
-    std::array<int, 9*9> puzzle;
-    std::array<std::set<int>, 9*9> memo;
+    puzzle data;
     std::array<int, 9*9> question;
     std::array<int, 9*9> answer;
     history hist;

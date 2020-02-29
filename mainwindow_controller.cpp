@@ -15,4 +15,6 @@ mainwindow_controller::mainwindow_controller() : controller(), view(controller.g
     view.on_restart_clicked += [this](GtkWidget* sender, nullptr_t null) -> void { this->controller.restart(); };
     view.on_new_clicked += [this](GtkWidget* sender, nullptr_t null) -> void { this->controller.start(); };
     view.on_answer_clicked += [this](GtkWidget* sender, nullptr_t null) -> void { this->controller.answer(); };
+    view.on_undo_clicked += [this](GtkWidget* sender, nullptr_t null) -> void { this->controller.undo(); };
+    view.on_redo_clicked += [this](GtkWidget* sender, nullptr_t null) -> void { this->controller.redo(); };
 }

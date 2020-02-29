@@ -46,4 +46,14 @@ void puzzle_controller::answer() {
     view.update();
 }
 
+void puzzle_controller::undo() {
+    model.undo();
+    view.update();
+}
+
+void puzzle_controller::redo() {
+    model.redo();
+    view.update();
+}
+
 
