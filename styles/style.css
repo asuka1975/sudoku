@@ -1,0 +1,61 @@
+R"(
+
+.sys-button {
+    color: gray;
+}
+
+.num-button {
+    color: black;
+    font-size: 32pt;
+}
+
+.puzzle-border {
+    border: 2px solid black;
+}
+
+.answer-style {
+    font-size: 32pt;
+    border: 1px solid lightgray;
+    background: white;
+}
+
+.line-style {
+    background: black;
+    font-size: 1px;
+}
+
+.selection-style {
+    font-size: 32pt;
+    border: 1px solid lightgray;
+    background: bisque;
+}
+
+.same-style {
+    font-size: 32pt;
+    border: 1px solid lightgray;
+    background: khaki;
+}
+
+.neighbor-style {
+    font-size: 32pt;
+    border: 1px solid lightgray;
+    background: whitesmoke;
+}
+
+.memo-font {
+    color: gray;
+}
+
+.question-number {
+    color: black;
+}
+
+.valid-number {
+    color: blue;
+}
+
+.invalid-number {
+    color: red;
+}
+
+)"
