@@ -93,6 +93,10 @@ void puzzle_view::update() {
             }
         }
     }
+    auto complete = model.get_complete();
+    std::string label = "";
+    for(int i = 0; i < 9; i++) label += (complete[i] ? std::to_string(i + 1) : " ") + " ";
+    gtk_label_set_label(GTK_LABEL(complete_label), label.data());
 }
 
 void puzzle_view::on_cell_click(GtkWidget* sender, GdkEventButton *event, gpointer* user_data) {
