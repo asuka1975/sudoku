@@ -26,6 +26,7 @@ public:
     void redo();
     bool is_question(int x, int y) const;
     bool is_valid(int x, int y) const;
+    std::array<bool, 9> get_complete() const;
 private:
     puzzle data;
     std::array<int, 9*9> question;
